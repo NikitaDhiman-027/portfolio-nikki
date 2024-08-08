@@ -189,14 +189,90 @@
                 padding-left: 0;
             }
         }
+
+        
+/* Footer Container */
+footer {
+    margin-top:20px;
+    background: linear-gradient(to right, #752288, rgba(9, 126, 126, 0.712)); 
+    color: #f4f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Increased font size for better readability */
+    position: relative;
+    padding: 20px 0;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-container h2 {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container li {
+    margin-bottom: 10px;
+}
+
+.footer-container a {
+    color: #f4f2f2;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px; 
+    font-size: 18px; 
+}
+
+.footer-bottom {
+    background-color: #99a8b9;
+    color: #0a0909;
+    text-align: center;
+    font-size: 0.9em;
+    position: absolute;
+    margin-top: 50%;
+    bottom: 0;
+    width: 100%;
+}
+
     </style>
     <script>
         function handleSubmit(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Here you can handle form data if needed
-
-            // Redirect to thank you page
+            event.preventDefault(); 
             window.location.href = 'thankyou.html';
         }
     </script>
@@ -238,5 +314,38 @@
             <img src="love letter.png" alt="Contact Image">
         </div>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>Hello, I'm Nikita Dhiman, a passionate Full Stack Developer with experience in creating dynamic and responsive web applications.</p>
+                <div class="social-media">
+                    <a href="https://github.com/NikitaDhiman-027" target="_blank" class="social-icon github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nikita027/" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/neekeeta_027" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/yourusername" target="_blank" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li><span>Address:</span> Samalkha, Haryana</li>
+                    <li><span>Email:</span> <a href="mailto:nikudhiman01@gmail.com">nikudhiman01@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ND. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
