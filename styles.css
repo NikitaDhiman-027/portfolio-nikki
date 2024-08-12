@@ -4,18 +4,13 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* Navigation Bar */
 nav {
-    background-color: #eeba2c;
-    padding: 15px 0;
-}
-
-nav {
+    background-color: #41054ea8;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #41054ea8;
 }
 
 nav img {
@@ -25,7 +20,6 @@ nav img {
 
 .navbar {
     list-style-type: none;
-    color: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -45,25 +39,21 @@ nav img {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar a:hover {
-    background-color: #fff;
-    color: #333;
-}
-
+.navbar a:hover,
 .navbar a.active {
     background-color: #fff;
     color: #333;
 }
+/* Container 1 */
 .container-1 {
     background-color: rgb(7, 7, 8);
     border: 5px solid transparent;
     border-radius: 60px 5px 60px 5px;
     height: auto;
-    margin: 5% 10%;
+    margin: 5% 20%;
     padding: 20px;
     color: aliceblue;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     border-image: linear-gradient(to right, yellow, aqua, rgb(246, 248, 245), white, aqua) 1;
@@ -82,7 +72,7 @@ nav img {
 
 .container-1 img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     height: auto;
     border-radius: 30px;
 }
@@ -105,34 +95,37 @@ nav img {
 
 .buttons {
     margin-top: 20px;
+    display: flex;
+    gap: 10px;
 }
 
-.download-button, .container-1 button {
-    display: inline-block;
+.download-button,
+.container-1 button {
     border: 1px solid aqua;
     border-radius: 4px;
     background-color: black;
     color: aqua;
     padding: 10px 20px;
-    margin: 10px;
     text-decoration: none;
     font-size: 1rem;
     transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 }
 
-.download-button:hover, .container-1 button:hover {
+.download-button:hover,
+.container-1 button:hover {
     background-color: black;
     color: aqua;
     box-shadow: 0 0 20px aqua;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .container-1 {
-        margin: 5%;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px;
     }
 
     .container-1 .text-content {
@@ -143,44 +136,21 @@ nav img {
     .container-1 img {
         max-width: 80%;
         margin-bottom: 20px;
+        height: auto;
     }
 
-    .container-1 .buttons {
-        margin-top: 20px;
-        display: flex;
+    .buttons {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
-    .container-1 button, .download-button {
+    .container-1 button,
+    .download-button {
         width: 100%;
-        margin: 10px 0;
     }
 }
 
-@media (max-width: 480px) {
-    .container-1 {
-        margin: 2%;
-        padding: 10px;
-    }
-
-    .container-1 img {
-        max-width: 100%;
-    }
-
-    .container-1 h4 {
-        font-size: 1.2rem;
-    }
-
-    .container-1 h1 {
-        font-size: 2rem;
-    }
-
-    .download-button, .container-1 button {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-}
 
 .container-2 {
     background-color: rgb(0, 0, 0);
